@@ -28,18 +28,37 @@ public class Flappy extends Application{
 	public void view(Stage primaryStage){
 		
 		GridPane root = new GridPane();
-		root.setAlignment(Pos.CENTER);
+		root.setAlignment(Pos.BASELINE_CENTER);
 		root.setHgap(10);
 		root.setVgap(10);
 		root.setPadding(new Insets(25, 25, 25, 25));
 		
 		Text title = new Text("FlappyBird!");
 		title.setFont(Font.font("Arial", 20));
-		root.add(title, 0, 0, 2, 1);
+		root.add(title, 0, 0, 1, 1);
 		
-		Scene scene = new Scene(root, 500, 250);
+		Button play = new Button("     Play     ");
+		HBox hbButton1 = new HBox(10);
+		hbButton1.setAlignment(Pos.BASELINE_CENTER);
+		hbButton1.getChildren().add(play);
+		root.add(hbButton1, 0, 5);
+		
+		Button highscore = new Button("Highscore");
+		HBox hbButton2 = new HBox(10);
+		hbButton2.setAlignment(Pos.BASELINE_CENTER);
+		hbButton2.getChildren().add(highscore);
+		root.add(hbButton2, 0, 10);
+		
+		Button options = new Button(" Optionen ");
+		HBox hbButton3 = new HBox(10);
+		hbButton3.setAlignment(Pos.BASELINE_CENTER);
+		hbButton3.getChildren().add(options);
+		root.add(hbButton3, 0, 15);
+		
+		Scene scene = new Scene(root, 500, 300);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Flappy");
+	
 		primaryStage.show();
 	}
 }
