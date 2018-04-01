@@ -14,7 +14,6 @@ import javafx.stage.Stage;
 
 public class Flappy extends Application{	
 	
-	
 	public static void main (String args[]){
 		launch(args);
 	}
