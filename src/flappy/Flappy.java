@@ -43,17 +43,30 @@ public class Flappy extends Application{
 		hbButton1.getChildren().add(play);
 		root.add(hbButton1, 0, 5);
 		
+		
+		play.setOnMouseClicked(event ->{
+			
+		});
+		
 		Button highscore = new Button("Highscore");
 		HBox hbButton2 = new HBox(10);
 		hbButton2.setAlignment(Pos.BASELINE_CENTER);
 		hbButton2.getChildren().add(highscore);
 		root.add(hbButton2, 0, 10);
 		
+		highscore.setOnMouseClicked(event ->{
+			
+		});
+		
 		Button options = new Button(" Optionen ");
 		HBox hbButton3 = new HBox(10);
 		hbButton3.setAlignment(Pos.BASELINE_CENTER);
 		hbButton3.getChildren().add(options);
 		root.add(hbButton3, 0, 15);
+		
+		options.setOnMouseClicked(event ->{
+			
+		});
 		
 		Scene scene = new Scene(root, 500, 300);
 		primaryStage.setScene(scene);
