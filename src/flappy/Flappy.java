@@ -68,6 +68,11 @@
 			
 		});
 		
+		
+		play.setOnMouseClicked(event ->{
+			
+		});
+		
 		Button highscore = new Button("Highscore");
 		HBox hbButton2 = new HBox(10);
 		hbButton2.setAlignment(Pos.BASELINE_CENTER);
