@@ -56,48 +56,25 @@
 			hbButton3.setAlignment(Pos.BASELINE_CENTER);
 			hbButton3.getChildren().add(options);
 			root.add(hbButton3, 0, 15);
+		
+			play.setOnMouseClicked(event ->{
+				
+			});
+			
+			
+			highscore.setOnMouseClicked(event ->{
+				
+			});
+			
+			options.setOnMouseClicked(event ->{
+				
+			});
 			
 			Scene scene = new Scene(root, 500, 300);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Flappy");
 		
 			primaryStage.show();
-		}
-		
-		.setOnMouseClicked(event ->{
-			
-		});
-		
-		
-		play.setOnMouseClicked(event ->{
-			
-		});
-		
-		Button highscore = new Button("Highscore");
-		HBox hbButton2 = new HBox(10);
-		hbButton2.setAlignment(Pos.BASELINE_CENTER);
-		hbButton2.getChildren().add(highscore);
-		root.add(hbButton2, 0, 10);
-		
-		highscore.setOnMouseClicked(event ->{
-			
-		});
-		
-		Button options = new Button(" Optionen ");
-		HBox hbButton3 = new HBox(10);
-		hbButton3.setAlignment(Pos.BASELINE_CENTER);
-		hbButton3.getChildren().add(options);
-		root.add(hbButton3, 0, 15);
-		
-		options.setOnMouseClicked(event ->{
-			
-		});
-		
-		Scene scene = new Scene(root, 500, 300);
-		primaryStage.setScene(scene);
-		primaryStage.setTitle("Flappy");
-	
-		primaryStage.show();
 
 	}
 }
